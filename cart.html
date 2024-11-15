@@ -1,0 +1,140 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+</head>
+
+<body class="container mx-auto bg-gray-100 font-sans">
+
+    <!-- Header -->
+    <script type="module" src="./script.js"></script>
+    <!-- ............................................ -->
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+        <div class="text-5xl font-bold italic text-orange-900  uppercase"> Amiy </div>
+        <div class="space-x-4">
+            <a href="index.html" class="text-gray-600 hover:text-gray-800">Home</a>
+            <a href="about.html" class="text-gray-600 hover:text-gray-800">About Us</a>
+            <a href="team.html" class="text-gray-600 hover:text-gray-800">Our Team</a>
+            <a href="shop.html" class="text-gray-600 hover:text-gray-800">Shop</a>
+            <a href="cart.html" class="text-gray-600 hover:text-gray-800">Cart</a>
+            <a href="faq.html" class="text-gray-600 hover:text-gray-800">FAQ</a>
+            <a href="blog.html" class="text-gray-600 hover:text-gray-800">Blog</a>
+            <a href="contact.html" class="text-gray-600 hover:text-gray-800">Contact Us</a>
+        </div>
+        <div class="flex items-center space-x-4">
+            <a href="cart.html" class="text-gray-700 hover:text-gray-800">
+                <i class="bi bi-cart3"></i>
+            </a>
+        </div>
+
+    </div>
+
+    <!-- Meet Our Team Section -->
+
+    <div class="relative">
+        <div class="bg-cover bg-center h-[300px]" style="background-image: url('images/back3.jpg');">
+            <!-- Textul care va apărea peste imagine -->
+            <div class="absolute inset-0 flex items-center justify-center">
+                <h1 class="text-center  sm:text-3xl md:text-5xl lg:text-5xl font-semibold text-orange-900 ">
+                    Shopping Cart
+                </h1>
+            </div>
+        </div>
+    </div>
+    <!-- ............................................ -->
+
+    <!-- Cart Section -->
+    <div class="container mx-auto my-12 px-6">
+
+        <!-- Cart Items -->
+        <div class="space-y-6">
+            <!-- Cart Item -->
+            <div
+                class="flex flex-col sm:flex-row items-center justify-between bg-gray-100 p-4 rounded-md space-y-4 sm:space-y-0">
+                <div class="flex items-center space-x-4">
+                    <img src="images/cc.jpg" alt="Product Image" class="w-48 rounded-lg shadow-lg">
+                    <div>
+                        <h2 class="text-lg font-semibold ">Product Name</h2>
+                        <p>Size: M</p>
+                        <p>Color: Red</p>
+                    </div>
+                </div>
+                <div class="flex flex-col sm:flex-row  sm:space-x-4">
+                    <div class="flex items-center  rounded-md">
+                        <button class="px-2 text-gray-700"><i class="bi bi-dash"></i></button>
+                        <input type="text" value="1"
+                            class="w-12 text-center border-l border-r border-gray-300 focus:outline-none">
+                        <button class="px-2 text-gray-700"><i class="bi bi-plus"></i></button>
+                    </div>
+                    <p class="text-lg font-semibold ">$49.99</p>
+                    <button class="text-red-500 hover:text-red-700"><i class="bi bi-x-lg"></i></button>
+                </div>
+            </div>
+
+            <div
+                class="flex flex-col sm:flex-row items-center justify-between bg-gray-100 p-4 rounded-md space-y-4 sm:space-y-0">
+                <div class="flex items-center space-x-4">
+                    <img src="images/peach.jpg" alt="Product Image" class="w-48 rounded-lg shadow-lg">
+                    <div>
+                        <h2 class="text-lg font-semibold ">Product Name</h2>
+                        <p>Size: M</p>
+                        <p>Color: Red</p>
+                    </div>
+                </div>
+                <div class="flex flex-col sm:flex-row  sm:space-x-4">
+                    <div class="flex items-center  rounded-md">
+                        <button class="px-2"><i class="bi bi-dash"></i></button>
+                        <input type="text" value="1"
+                            class="w-12 text-center border-l border-r border-gray-300 focus:outline-none">
+                        <button class="px-2 text-gray-700"><i class="bi bi-plus"></i></button>
+                    </div>
+                    <p class="text-lg font-semibold ">$49.99</p>
+                    <button class="text-red-500 hover:text-red-700"><i class="bi bi-x-lg"></i></button>
+                </div>
+            </div>
+
+            <!-- Cart Summary -->
+            <div class="mt-12 p-6 bg-gray-100 rounded-md">
+                <h2 class="text-xl font-semibold mb-4">Order Summary</h2>
+                <div class="flex justify-between mb-2">
+                    <p>Subtotal</p>
+                    <p class=" font-semibold">$89.98</p>
+                </div>
+                <div class="flex justify-between mb-2">
+                    <p>Shipping</p>
+                    <p class="font-semibold">$5.99</p>
+                </div>
+                <div class="flex justify-between mb-2">
+                    <p>Tax</p>
+                    <p class=" font-semibold">$3.60</p>
+                </div>
+                <div class="flex justify-between text-lg font-semibold mt-4">
+                    <p>Total</p>
+                    <p>$99.57</p>
+                </div>
+
+
+
+                <div class="flex justify-center items-center mt-16">
+                    <a href="checkout.html" class="w-48 bg-amber-700 text-white py-3 rounded-md hover:bg-amber-600 text-center">
+                      Proceed to Checkout
+                    </a>
+                  </div>
+                  
+                  
+            </div>
+        </div>
+
+        <!-- Footer -->
+
+        <div class="bg-gray-100 py-4 mt-16">
+            <div class="container mx-auto text-center text-gray-500">
+                <div><i class="bi bi-c-circle"></i> Copyright 2024 </div>
+            </div>
+        </div>
+</body>
+
+</html>
