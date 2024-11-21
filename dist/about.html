@@ -5,31 +5,63 @@
     <link rel="icon" type="image/svg+xml" href="./vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
-  <script type="module" crossorigin src="./assets/script-Ce65cLzW.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/script-DDmrPo_J.css">
+  <script type="module" crossorigin src="./assets/script-BZsSRBkK.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/script-OStXAEsF.css">
 </head>
 
 <body class=" bg-gray-100 font-sans">
+    <style>
+        @keyframes text-focus-in {
+            0% {
+                filter: blur(12px);
+                opacity: 0;
+            }
+
+            100% {
+                filter: blur(0px);
+                opacity: 1;
+            }
+        }
+
+
+        .text-focus-in {
+            animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+        }
+
+    </style>
 
-    <div class=" flex justify-between items-center py-4 px-6">
-        <div class="text-5xl font-bold italic text-orange-900 uppercase"> Amiy </div>
-        <div class="space-x-4">
-          <a href="index.html" class="text-gray-600 hover:text-gray-800">Home</a>
-          <a href="about.html" class="text-gray-600 hover:text-gray-800">About Us</a>
-          <a href="team.html" class="text-gray-600 hover:text-gray-800">Our Team</a>
-          <a href="shop.html" class="text-gray-600 hover:text-gray-800">Shop</a>
-          <a href="cart.html" class="text-gray-600 hover:text-gray-800">Cart</a>
-          <a href="faq.html" class="text-gray-600 hover:text-gray-800">FAQ</a>
-          <a href="blog.html" class="text-gray-600 hover:text-gray-800">Blog</a>
-          <a href="contact.html" class="text-gray-600 hover:text-gray-800">Contact Us</a>
+
+    <div class="flex items-center justify-between py-4 px-6 sticky top-0 bg-white z-50">
+
+        <div class="text-focus-in text-5xl  font-bold italic text-orange-900 uppercase">
+            Amiy
         </div>
+        
+        
+           
+            
+            <div class="hidden md:flex flex-wrap space-x-4">
+                <a href="index.html" class="text-gray-600 hover:text-gray-800">Home</a>
+                <a href="about.html" class="text-gray-600 hover:text-gray-800">About Us</a>
+                <a href="team.html" class="text-gray-600 hover:text-gray-800">Our Team</a>
+                <a href="shop.html" class="text-gray-600 hover:text-gray-800">Shop</a>
+                <a href="cart.html" class="text-gray-600 hover:text-gray-800">Cart</a>
+                <a href="faq.html" class="text-gray-600 hover:text-gray-800">FAQ</a>
+                <a href="blog.html" class="text-gray-600 hover:text-gray-800">Blog</a>
+                <a href="contact.html" class="text-gray-600 hover:text-gray-800">Contact Us</a>
+            </div>
+            
+            <div>
+            <button class="md:hidden text-gray-700">
+                <i class="bi bi-list text-3xl"></i>
+            </button>
+            <a href="cart.html" class="ml-4 text-gray-700 hover:text-gray-800">
+                <i class="bi bi-cart3 text-2xl"></i>
+            </a>
+        </div>
+    </div>
     
-        <div class="flex items-center space-x-4">
-          <a href="cart.html" class="text-gray-700 hover:text-gray-800">
-              <i class="bi bi-cart3"></i>
-          </a>
-      </div>
-      </div>
+
 
     <div class="relative">
         <div class="bg-cover bg-center h-[200px]" style="background-image: url('./assets/back3-BTplbYn-.jpg');">
@@ -43,12 +75,10 @@
 
     <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 items-center mt-24 ">
         <div class="flex justify-center">
-            <img src="./assets/beauty4-Bai9tK-s.jpg" class="w-4/5 border-4 p-2 rounded-lg "
-                alt="Imagine 1">
+            <img src="./assets/beauty4-Bai9tK-s.jpg" class="w-4/5 border-4 p-2 rounded-lg " alt="Imagine 1">
         </div>
         <div class="flex justify-center">
-            <img src="./assets/beauty3-DXFnY8UQ.jpg" class="w-4/5 border-4 p-2 rounded-lg "
-                alt="Imagine 2">
+            <img src="./assets/beauty3-DXFnY8UQ.jpg" class="w-4/5 border-4 p-2 rounded-lg " alt="Imagine 2">
         </div>
     </div>
 
@@ -65,7 +95,7 @@
             care to support this.
         </p>
     </div>
-    
+
 
 
     <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 items-center justify-center gap-16">
@@ -87,7 +117,7 @@
                 </p>
             </div>
         </div>
-    
+
         <div>
             <div class="sm:text-sm md:text-md lg:text-lg p-6 ">
                 <h2 class="text-3xl font-bold mb-4 text-center">Our Values</h2>
@@ -139,7 +169,7 @@
 
     </div>
 
-    <div class="bg-gray-100 py-4 mt-16">
+    <div class="bg-rose-100 py-4 mt-16">
         <div class="container mx-auto text-center text-gray-500">
             <div><i class="bi bi-c-circle"></i> Copyright 2024 </div>
         </div>
