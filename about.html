@@ -43,6 +43,30 @@
             animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
         }
 
+        .fade-in {
+            -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        }
+
+        @-webkit-keyframes fade-in {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fade-in {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
     </style>
 
     <script type="module" src="./script.js"></script>
@@ -52,22 +76,18 @@
         <div class="text-focus-in text-5xl  font-bold italic text-orange-900 uppercase">
             Amiy
         </div>
-        
-        
-           
-            
-            <div class="hidden md:flex flex-wrap space-x-4">
-                <a href="index.html" class="text-gray-600 hover:text-gray-800">Home</a>
-                <a href="about.html" class="text-gray-600 hover:text-gray-800">About Us</a>
-                <a href="team.html" class="text-gray-600 hover:text-gray-800">Our Team</a>
-                <a href="shop.html" class="text-gray-600 hover:text-gray-800">Shop</a>
-                <a href="cart.html" class="text-gray-600 hover:text-gray-800">Cart</a>
-                <a href="faq.html" class="text-gray-600 hover:text-gray-800">FAQ</a>
-                <a href="blog.html" class="text-gray-600 hover:text-gray-800">Blog</a>
-                <a href="contact.html" class="text-gray-600 hover:text-gray-800">Contact Us</a>
-            </div>
-            
-            <div>
+        <div class="hidden md:flex flex-wrap space-x-4">
+            <a href="index.html" class="text-gray-600 hover:text-gray-800">Home</a>
+            <a href="about.html" class="text-gray-600 hover:text-gray-800">About Us</a>
+            <a href="team.html" class="text-gray-600 hover:text-gray-800">Our Team</a>
+            <a href="shop.html" class="text-gray-600 hover:text-gray-800">Shop</a>
+            <a href="cart.html" class="text-gray-600 hover:text-gray-800">Cart</a>
+            <a href="faq.html" class="text-gray-600 hover:text-gray-800">FAQ</a>
+            <a href="blog.html" class="text-gray-600 hover:text-gray-800">Blog</a>
+            <a href="contact.html" class="text-gray-600 hover:text-gray-800">Contact Us</a>
+        </div>
+
+        <div>
             <button class="md:hidden text-gray-700">
                 <i class="bi bi-list text-3xl"></i>
             </button>
@@ -76,12 +96,12 @@
             </a>
         </div>
     </div>
-    
+
 
 
     <div class="relative">
         <div class="bg-cover bg-center h-[200px]" style="background-image: url('images/back3.jpg');">
-            <div class="absolute inset-0 flex items-center justify-center">
+            <div class=" absolute inset-0 flex items-center justify-center">
                 <h1 class="text-center  sm:text-3xl md:text-5xl lg:text-5xl font-semibold text-orange-900 ">
                     About Us
                 </h1>
@@ -89,7 +109,7 @@
         </div>
     </div>
 
-    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 items-center mt-24 ">
+    <div class=" container mx-auto grid grid-cols-1 md:grid-cols-2 items-center mt-24 ">
         <div class="flex justify-center">
             <img src="images/beauty4.jpg" class="w-4/5 border-4 p-2 rounded-lg " alt="Imagine 1">
         </div>
